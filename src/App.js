@@ -8,7 +8,7 @@ const langs = {
 export default function App() {
   const { i18n } = useTranslation()
   return (
-    <center>
+    <center >
       <h2>
         <Trans i18nKey="welcome">
           Welcome
@@ -20,12 +20,15 @@ export default function App() {
         </Trans>
       </h4>
       {Object.keys(langs).map((lang) => (
-        <button
+        <button className="btn btn-info"
           style={{ fontWeight: i18n.language === lang ? "bold" : "normal" }}
           onClick={() => i18n.changeLanguage(lang)}
         >{langs[lang]}
         </button>
-      ))}
+      ))}<br></br>
+         <img  src="https://i.pinimg.com/originals/1f/82/c9/1f82c992767ce8aeb6ef8b84a81a0eb2.gif"/>
     </center>
+
+
   )
 }
