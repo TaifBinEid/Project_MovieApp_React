@@ -6,13 +6,19 @@ i18n.use(initReactI18next).use(languageDetector).init({
         en: {
             translation: {
                 welcome: "Hi",
-                do: "What do you want to do?"
+                do: "What do you want to see from the movies?"
             }
         },
         ar: {
             translation: {
                 welcome: "مرحبًا",
-                do: "ماذا تريد أن تفعل؟"
+                do: "ماذا تريد أن تشاهد من الأفلام؟"
+            }
+        },
+        fr: {
+            translation: {
+                welcome: "Bonjour",
+                do: "Que veux-tu voir dans les films ?"
             }
         }
     }

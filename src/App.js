@@ -2,7 +2,8 @@ import React from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 const langs = {
   en: "English",
-  ar: "Arabic"
+  ar: "Arabic",
+  fr:"French"
 }
 export default function App() {
   const { i18n } = useTranslation()
